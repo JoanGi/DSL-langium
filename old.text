@@ -1,0 +1,19 @@
+Game:
+    'game' name=ID description=TEXT NEWLINE (rules+=Riddle) + (suggestions+=Suggestion)* ;
+
+Riddle:
+    'riddle' name=ID question=TEXT 'Answer' answer=TEXT NEWLINE ;    
+
+Suggestion:
+    'suggestion' text=TEXT 'for' riddle=[Riddle] 'at' 'time' minutes=INT ':' seconds=INT NEWLINE ;
+
+
+    
+Mode2:
+    (persons+=Person | greetings+=Greeting)*;
+
+Person:
+    'person' name=ID;
+
+Greeting:
+    'Hello' person=[Person|ID] '!';

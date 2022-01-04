@@ -1,0 +1,9 @@
+{
+    "languageId": "second",
+    "grammar": "src/language-server/second.langium",
+    "fileExtensions": [".second"],
+    "out": "src/language-server/generated",
+    "textMate": {
+        "out": "syntaxes/second.tmLanguage.json"
+    }
+}

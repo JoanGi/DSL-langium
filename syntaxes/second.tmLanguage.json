@@ -1,0 +1,36 @@
+{
+  "name": "second",
+  "scopeName": "source.second",
+  "fileTypes": [
+    ".second"
+  ],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "name": "keyword.control.second",
+      "match": "\\b(attribute|author|bool|composedBy:|dataset|email:|equal|fromAtt|grater|images|instance|int|lower|ofType|ofType:|people|raw|reportedby:|requeriment|string|withAttributes:|withDescription:)\\b"
+    },
+    {
+      "name": "keyword.symbol.second",
+      "match": "(\\.|\\composedBy:|\\email:|\\ofType:|\\reportedby:|\\withAttributes:|\\withDescription:)"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "begin": "--",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.whitespace.comment.leading.second"
+            }
+          },
+          "end": "(?=$)",
+          "name": "comment.line.second"
+        }
+      ]
+    }
+  }
+}
